@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Фон -->
+  <rect width="100" height="100" fill="#0a0a0a"/>
+  
+  <!-- Буква Л в бруталистическом стиле -->
+  <g fill="#3b82f6">
+    <!-- Вертикальная часть -->
+    <rect x="20" y="25" width="12" height="55" rx="2"/>
+    <!-- Горизонтальная часть -->
+    <rect x="20" y="70" width="50" height="12" rx="2"/>
+    <!-- Диагональный акцент -->
+    <rect x="32" y="25" width="8" height="45" rx="1" fill="#60a5fa" opacity="0.8"/>
+  </g>
+  
+  <!-- Дополнительный акцент -->
+  <rect x="70" y="30" width="6" height="40" fill="#60a5fa" opacity="0.6"/>
+</svg>
