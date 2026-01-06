@@ -1,6 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { motion, useScroll, useTransform, useReducedMotion } from "framer-motion";
-import heroTrainer from "@/assets/hero-trainer.jpg";
+import trainerLobanov from "@/assets/trainer-lobanov.jpg";
 import FloatingShapes from "./FloatingShapes";
 import AnimatedCounter from "./AnimatedCounter";
 
@@ -124,12 +124,17 @@ const HeroSection = () => {
         style={{ y: prefersReducedMotion ? 0 : y, opacity }}
       >
         <img
-          src={heroTrainer}
-          alt="Тренер Лобанов — профессиональный фитнес-тренер и наставник"
-          className="h-full w-full object-cover opacity-40"
+          src={trainerLobanov}
+          alt="Тренер Лобанов — персональный тренер и наставник для фитнес-специалистов"
+          className="h-full w-full object-cover object-top"
           loading="eager"
+          style={{
+            filter: "grayscale(30%) brightness(0.7)",
+          }}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent" />
+        {/* Blue duotone overlay */}
+        <div className="absolute inset-0 bg-primary/20 mix-blend-overlay" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-background/60" />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/50" />
       </motion.div>
 
