@@ -1,0 +1,9 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: lobanov-fitness
+    ports:
+      - "44223:3000"
+    restart: unless-stopped
