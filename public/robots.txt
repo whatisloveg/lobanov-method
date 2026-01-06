@@ -1,3 +1,4 @@
+# Основные поисковые боты
 User-agent: Googlebot
 Allow: /
 
@@ -10,5 +11,37 @@ Allow: /
 User-agent: facebookexternalhit
 Allow: /
 
+User-agent: YandexBot
+Allow: /
+
+User-agent: Mail.RU_Bot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: TelegramBot
+Allow: /
+
+# Все остальные боты
 User-agent: *
 Allow: /
+
+# Запрет индексации служебных путей
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+Disallow: /*.json$
+Disallow: /private/
+
+# Карта сайта
+Sitemap: https://lobanov-fitness.ru/sitemap.xml
+
+# Задержка между запросами (опционально, для снижения нагрузки)
+Crawl-delay: 1
+
+# Хост (основной домен)
+Host: https://lobanov-fitness.ru

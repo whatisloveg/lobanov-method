@@ -6,17 +6,17 @@ const Footer = () => {
           <div className="font-display text-xl font-bold uppercase text-foreground">
             Тренер <span className="text-electric">Лобанов</span>
           </div>
-          <nav className="flex gap-6 font-body text-sm text-muted-foreground">
-            <a href="#mentorship" className="hover-underline hover:text-foreground transition-colors">
+          <nav aria-label="Основная навигация" className="flex gap-6 font-body text-sm text-muted-foreground">
+            <a href="#mentorship" className="hover-underline hover:text-foreground transition-colors" aria-label="Перейти к разделу наставничество для тренеров">
               Наставничество
             </a>
-            <a href="#training" className="hover-underline hover:text-foreground transition-colors">
+            <a href="#training" className="hover-underline hover:text-foreground transition-colors" aria-label="Перейти к разделу персональные тренировки">
               Тренировки
             </a>
-            <a href="#results" className="hover-underline hover:text-foreground transition-colors">
+            <a href="#results" className="hover-underline hover:text-foreground transition-colors" aria-label="Перейти к разделу результаты учеников и клиентов">
               Результаты
             </a>
-            <a href="#about" className="hover-underline hover:text-foreground transition-colors">
+            <a href="#about" className="hover-underline hover:text-foreground transition-colors" aria-label="Перейти к разделу о тренере Лобанове">
               О тренере
             </a>
           </nav>
